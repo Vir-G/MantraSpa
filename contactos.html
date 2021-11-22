@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mantra Spa</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos/style.css">
+    </head>
+<body>
+	<header>
+		<nav class="navbar navbar-light navbar-expand-md bg-light border-3 border-botton">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="index.html">
+			<img src="imagenes/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+			Mantra Spa 
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="tratamiento.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Tratamiento
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+					<li><a class="dropdown-item" href="tratamiento.html">Promo Masaje</a></li>
+					<li><a class="dropdown-item" href="tratamiento.html">Promo Amigas</a></li>
+					<li>
+				</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="planes.html">Planes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contactos.html">Contactanos</a>
+				</li>
+				<hr class="dropdown-divider">
+			</li>
+			<li><a class="dropdown-item" href="sesion.html">Iniciar Sesión</a></li>
+			</ul>
+			</div>
+		</div>
+		</div>
+	</nav>
+	</header>
+	<div class="Contacto">
+		<h3>Contacto</h3>
+		<div class="container">
+			<h2>Formulario de Contacto</h2>
+		<form action="#">
+			<div class="form-group">
+			<label for="nombre_apellido">Nombre y Apellido:</label>
+			<input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre y Apellido" name="Nombre"/>
+			</div>
+			<div class="form-group">
+			<label for="Mail">Mail:</label>
+			<input type="text" class="form-control" id="Mail" placeholder="Ingresar Mail" name="Mail"/>
+		</div>
+		<div class="form-group">
+		<label for="Telefono">Telefono:</label>
+		<input type="text" class="form-control" id="Telefono" placeholder="Ingresar Telefono" name="Telefono"/>
+		</div>
+		<div class="form-group">
+			<label for="asunto">Asunto:</label>
+			<input type="text" class="form-control" id="Asunto" placeholder="Ingresar Asunto" name="Asunto"/>
+		</div>
+		<div class="form-group">
+			<label for="Mensaje">Mensaje:</label>
+			<input type="text" class="form-control" id="Mensaje" placeholder="Mensaje" name="Mensaje"/>
+		</div>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Enviar</button>
+			<div id="demo" class="collapse">Enviar. 
+			</div>
+		</form>
+		</div>
+<!--Mapa--> 
+	<article>
+		<h2>Conocer nuestro local</h2>
+		<div class="Contacto__Ubicacion"> 
+			<i class="Contacto__iconoUbicacion" >
+			</i>
+			<h5>Colonos Sudafricanos 2483, U9003 Comodoro Rivadavia, Chubut</h5>
+		</div>
+		<div class="Contacto__Telefono"> 
+			<i class="Contacto__iconoTelefono" >
+			</i>
+			<h5>0297 430-8796</h5>
+		</div>
+		<div class="Contacto__Horario"> 
+			<i class="Contacto__iconoHorario" >
+			</i>
+			<h5>Lunes a Viernes</h5>
+			<h6>10:00 a 19:00 hs</h6>
+			<h5>Sábados</h5>
+			<h6>15:00 a 19:00 hs</h6>
+			<h5>Domingos</h5>
+			<h6>Cerrado</h6>
+		</div>
+
+		<div class="Contacto__mapa">
+			<iframe width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5574.890960256976!2d-67.52929514093304!3d-45.875277613151056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7852e4da85109f3a!2sMantra%20Spa!5e0!3m2!1ses!2sar!4v1636665271246!5m2!1ses!2sar">
+			</iframe>
+		</div>
+	</article>
+</div>
+</section>
+        <footer>
+            <img src="imagenes/Mantra.png" alt="Logo Mantra">
+            <h4>Seguinos</h4>
+            <img src="imagenes/Instagram.png" alt="Instagram">
+            <img src="imagenes/Facebook.png" alt="Facebook">
+        </footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
