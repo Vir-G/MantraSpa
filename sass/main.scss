@@ -6,19 +6,28 @@
     flex-direction: column; 
     align-items: center;
 }
+
+table {
+    border: 2px solid;
+}
+
 body{
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .logo{
     margin: o,5rem;
 }
+
 header{
     background-color: rgb(255, 255, 255);
 }
+
 nav{
     padding: 30px;
 }
+
 ul{
     li{
         display: inline;
@@ -27,43 +36,182 @@ ul{
     }
 }
 
-.MenuNavegacion{
-    top: 0%;
-    nav-right: 0%;
+.tratamiento{
+    position: relative;
+}
+
+
+.tratamientoImagenes{
     display: flex;
     flex-direction: row;
+}
+
+
+h1{
+    text-align: center;
+    color:palevioletred;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    color: palevioletred;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h5{
+    color: rgb(44, 43, 43);
+    font-family: 'Roboto', sans-serif;
+}
+
+h6{
+    color: rgb(44, 43, 43);
+}
+p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "imagen1 zonas zonas hombres hombres imagen2"
+        "imagen1 zonas zonas hombres hombres imagen2"; 
+    grid-template-columns: 20% auto 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.zonas {
+    grid-area: zonas;
+}
+
+.hombres {
+    grid-area: hombres;     
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+} 
+
+.Contacto__Local{
+    display: grid;
+    grid-template-areas:
+    "Contacto__iconoUbicacion Contacto__Ubicacion Contacto__mapa"
+    "Contacto__iconoTelefono Contacto__Telefono Contacto__mapa"
+    "Contacto__iconoHorario Contacto__Horario Contacto__mapa"; 
+grid-template-columns: 0 auto 50%;
+text-align:flex-start;
+}
+
+.Contacto__iconoUbicacion {
+    grid-area: Contacto__iconoUbicacion;
+    justify-content: flex-start;
+}
+
+.Contacto__Ubicacion {
+    grid-area: Contacto__Ubicacion;
+    justify-content: center;
+}
+
+.Contacto__iconoTelefono {
+    grid-area: Contacto__iconoTelefono;
+    justify-content: flex-start;
+}
+
+.Contacto__Telefono{
+    grid-area: Contacto__Telefono;
+    justify-content: center;
+}
+
+.Contacto__iconoHorario {
+    grid-area: Contacto__iconoHorario;
+    justify-content: flex-start;
+}
+
+.Contacto__Horario{
+    grid-area: Contacto__Horario;
+    justify-content: center;
+}
+
+.Contacto__mapa {
+    grid-area: Contacto__mapa;
+    justify-content: center;
+}
+
+.Footer__Redes{
     justify-content: flex-end;
-    overflow: hidden;
-    background-color: #333;
+}
 
-    display: inline-block;
-    position: relative;
-    color: white;
+.Footer__Logo{
+    justify-content: flex-end;
+}
 
-    a{
-        float: left;
-        display: block;
-        color: #f2f2f2;
+@media only screen and (max-width: 768px) {
+    
+.body {
+    background-color: #000000;
+}
+.h1{
+        color: antiquewhite;
+        font-family: 'Roboto', sans-serif;
+    }
+
+.tratamientoImagenes {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+#grilla {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "imagen1"
+            "zonas"
+            "imagen2"
+            "hombres";
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+        justify-content: center;
     }
 
-    ::after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: white;
-        transform-origin: bottom right;
-        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+.carousel-control-prev {
+        margin-top: -107px;
     }
 
-    :hover::after{
-        transform: scaleX(1);
-        transform-origin: bottom left;
+    .Contacto__Local {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
     }
+    .Contacto__mapa {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
 }
