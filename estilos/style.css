@@ -87,10 +87,8 @@ p{
 #grilla {
     display: grid;
     grid-template-areas:
-        "imagen1 zonas zonas"
-        "imagen1 zonas zonas"
-        "hombres hombres imagen2"
-        "hombres hombres imagen2"; 
+        "imagen1 zonas zonas hombres hombres imagen2"
+        "imagen1 zonas zonas hombres hombres imagen2"; 
     grid-template-columns: 20% auto 20%;
     text-align: center;
     justify-content: center;
@@ -122,40 +120,55 @@ p{
     "Contacto__iconoUbicacion Contacto__Ubicacion Contacto__mapa"
     "Contacto__iconoTelefono Contacto__Telefono Contacto__mapa"
     "Contacto__iconoHorario Contacto__Horario Contacto__mapa"; 
-grid-template-columns: 0 auto 20%;
+grid-template-columns: 0 auto 50%;
 text-align:flex-start;
-justify-content: flex-start;
 }
 
 .Contacto__iconoUbicacion {
     grid-area: Contacto__iconoUbicacion;
+    justify-content: flex-start;
 }
 
 .Contacto__Ubicacion {
     grid-area: Contacto__Ubicacion;
+    justify-content: center;
 }
 
 .Contacto__iconoTelefono {
     grid-area: Contacto__iconoTelefono;
+    justify-content: flex-start;
 }
 
 .Contacto__Telefono{
     grid-area: Contacto__Telefono;
+    justify-content: center;
 }
 
 .Contacto__iconoHorario {
     grid-area: Contacto__iconoHorario;
+    justify-content: flex-start;
 }
 
 .Contacto__Horario{
     grid-area: Contacto__Horario;
+    justify-content: center;
 }
 
 .Contacto__mapa {
     grid-area: Contacto__mapa;
+    justify-content: center;
+}
+
+.Footer__Redes{
+    justify-content: flex-end;
+}
+
+.Footer__Logo{
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 768px) {
+    
 .body {
     background-color: #000000;
 }
@@ -175,10 +188,10 @@ justify-content: flex-start;
         display: grid;
         grid-template-columns: 100%;
         grid-template-areas:
-            "header"
             "imagen1"
-            "hombres"
-            "imagen2";
+            "zonas"
+            "imagen2"
+            "hombres";
         text-align: center;
         justify-content: center;
     }
@@ -187,4 +200,20 @@ justify-content: flex-start;
         margin-top: -107px;
     }
 
+    .Contacto__Local {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .Contacto__mapa {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
 }
